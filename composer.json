@@ -1,0 +1,12 @@
+{
+    "name": "job-search",
+    "license": "MIT",
+    "description": "Ultra–Lean HTML Building Blocks for Rapid Website Production",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Rodrigo Delgado",
+            "email": ""
+        }
+    ]
+}
