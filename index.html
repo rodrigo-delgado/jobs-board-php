@@ -15,19 +15,81 @@
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/kickstart.js"></script>
 </head>
+
 <body>
+
 	<div id="container" class="grid">
 		<header>
 			<div class="col_6 column">
-				<h1><span>Job</span>Find</h1>
+				<h1><span>Job</span>Finds</h1>
 			</div>
-			<div class="co_6 column">
-				<form class="" action="index.html" method="post">
-					<button class="large green"><i class="icon-plus">Add Job</i></button>
+			<div class="col_6 column">
+				<form>
+					<button class="large green"><i class="fa fa-plus"></i> Add Job</button>
 				</form>
 			</div>
 		</header>
+
+		<div class="col_12 column">
+			<ul class="menu">
+				<li class="current"><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+				<li><a href=""><i class="fa fa-desktop"></i> Browse Jobs</a></li>
+				<li><a href="register.html"><i class="fa fa-user"></i> Register</a></li>
+				<li><a href="login.html"><i class="fa fa-key"></i> Login</a></li>
+			</ul>
+		</div>
+
+		<div id="search_area" class="col_12 column">
+			<form class="horizontal" action="#" method="post">
+				<input id="keywords" type="text" placeholder="Enter Keywords..." />
+					<select id="region_select">
+						<option>Select Region</option>
+						<option value="WLG">Wellington</option>
+						<option value="AKL">Auckland</option>
+						<option value="CHC">Christchurch</option>
+					</select>
+
+					<select id="category_select">
+						<option>Select Category</option>
+						<option>Accounting and Banking</option>
+						<option>Construction</option>
+						<option>Hospitality</option>
+						<option>Technology</option>
+						<option>Reatil and Sales</option>
+						<option>Helthcare</option>
+					</select>
+					<button type="submit">Submit</button>
+			</form>
+		</div>
+		<div class="col_12 column">
+			<h3>Latest Job Listings</h3>
+			<ul id="listings">
+				
+				<li>
+					<div class="type">
+						<span class="green">Full Time</span>
+					</div>
+					<div class="description">
+						<h5>Senior Graphic Designer - Auckland</h5>
+						bla bla bla...
+						<a href="details.html"><i class="fa fa-plus"></i> Read More</a>
+					</div>
+				</li>
+
+				<li>
+					<div class="type">
+						<span class="green">Full Time</span>
+					</div>
+					<div class="description">
+						<h5>UX Designer - Wellington</h5>
+						Bla Bla Ba....
+						<a href="details.html"><i class="fa fa-plus"></i> Read More</a>
+					</div>
+				</li>
+
+			</ul>
+		</div>
 	</div>
-</div> <!-- End Grid -->
+<!-- End Grid -->
 </body>
 </html>
